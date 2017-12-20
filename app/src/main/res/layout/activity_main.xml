@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leo.minecleaning.activity.MainActivity"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/myToolbar"/>
+
+    <TextView
+        android:layout_below="@id/myToolbar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/orange_button"
+        android:padding="10dp"
+        android:id="@+id/tv_mine_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="雷的总数：100"
+        />
+
+
+    <TextView
+        android:layout_below="@id/myToolbar"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/orange_button"
+        android:padding="10dp"
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="得分：0"
+        />
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/blue_button"
+        android:textSize="20sp"
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/blue_button"
+        android:textSize="20sp"
+        android:id="@+id/btn_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:textAllCaps="false"/>
+
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_alignTop="@id/tv_mine_all"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+        android:layout_alignBottom="@id/btn_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>
